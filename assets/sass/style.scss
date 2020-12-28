@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+
+    .img-card {
+        width: 7%;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+        border-radius: 50px;
+        transition: 1s ease-in;
+        margin: 7px;
+
+        h4 {
+            position: absolute;
+            width: max-content;
+            bottom: 10px;
+            left: 40px;
+            font-size: calc(1.275rem + .3vw);
+            font-weight: 500;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            transition: 0.7s;
+            opacity: 0;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        &.expand {
+            width: 65%;
+
+            h4 {
+                opacity: 1;
+            }
+
+        }
+
+    }
+@media screen and (max-width: 900px) {
+        padding: 70px 20px;
+}
+}
+

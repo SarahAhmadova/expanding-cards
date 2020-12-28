@@ -53,5 +53,21 @@
 @media screen and (max-width: 900px) {
         padding: 70px 20px;
 }
+@media screen and (max-width: 500px) {
+        .img-card{
+            h4{
+                bottom: 30px;
+                left: 7px;
+                font-size: 16px;
+            }
+        }
+}
+@media screen and (max-width: 323px) {
+        .img-card{
+            h4{
+                visibility: hidden;
+            }
+        }
+}
 }
 

@@ -66,4 +66,18 @@
     padding: 70px 20px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .container .img-card h4 {
+    bottom: 30px;
+    left: 7px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 323px) {
+  .container .img-card h4 {
+    visibility: hidden;
+  }
+}
 /*# sourceMappingURL=style.css.map */
